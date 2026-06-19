@@ -17,6 +17,11 @@ source ~/miniforge3/etc/fish/conf.d/conda.fish
 conda activate <name>
 ```
 
+**deactivate**
+```bash
+conda deactivate
+```
+
 **install**
 ```bash
 conda install <package>
@@ -53,6 +58,10 @@ python -m venv <name>
 ```bash
 # Linux or MacOS
 source <name>/bin/activate
+```
+**deactivate**
+```bash
+deactivate
 ```
 
 **install**
