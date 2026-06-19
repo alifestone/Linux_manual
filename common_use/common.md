@@ -44,8 +44,42 @@ conda info --envs
 <br><br>
 
 ## uv
-The official uv documentation already has a complete guide. It is highly recommended to read it.<br>
-[link](https://docs.astral.sh/uv/guides/projects/)
+**create**
+```bash
+uv venv <name> (--python <version>)
+```
+
+**activate**
+```bash
+# bash
+source <name>/bin/activate
+
+# fish
+source <name>/bin/activate.fish
+```
+**deactivate**
+```bash
+deactivate
+```
+
+**install**
+```bash
+uv pip install <name>(==<version>)
+```
+
+**list**
+```bash
+# list all installed package
+uv pip list
+# list specify installed package
+uv pip show <package>
+
+# find env name
+tree . | grep activate # or any tool can list files
+```
+
+**reference：** https://docs.astral.sh/uv/pip/environments/
+project guide => [link](https://docs.astral.sh/uv/guides/projects/)
 <br><br>
 
 ## Python venv
