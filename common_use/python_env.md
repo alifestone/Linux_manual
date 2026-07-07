@@ -56,6 +56,9 @@ source <name>/bin/activate
 
 # fish
 source <name>/bin/activate.fish
+
+# Powershell
+<name>\Scripts\Activate.ps1
 ```
 **deactivate**
 ```bash
