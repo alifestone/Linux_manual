@@ -6,6 +6,14 @@ sudo ncdu <folder>
 
 ## 查看進程
 ```bash
-ps aux | grep "PID"
-# lifesto+ 1973505  0.0  0.0   9524  2908 pts/4    R+   21:56   0:00 grep --color=auto PID
+# 查看近期進程
+ps -eo pid,ppid,lstart,etime,tty,stat,args --sort=start_time
+# 查看特定進程
+ps aux | grep "<pid> or <script name>"
 ```
+
+## 查看 GPU 使用
+`nvidia-smi`
+
+## 查看資源使用率
+`btop`
